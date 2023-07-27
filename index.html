@@ -9,5 +9,52 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
+    <header>
+        <div class="max-w-[1180px] m-auto">
+            <div class="navbar flex-row-reverse md:flex-row md:bg-red-500 p-5 px-8 rounded-full my-3 text-white">
+                <div class="navbar-start">
+                    <div class="dropdown text-black">
+                        <label tabindex="0" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </label>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li><a>About Us</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>All Fruits</a></li>
+                        </ul>
+                    </div>
+                    <ul class="hidden lg:flex menu menu-horizontal md:px-1 text-base font-semibold">
+                        <li><a>Home</a></li>
+                        <li><a>About Us</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-center lg:flex">
+                    <div class="flex justify-center items-center gap-x-2">
+                        <a href="#"><img src="./images/logo.png" alt=""></a>
+                        <h2 class="text-3xl font-bold text-black md:text-white"><a href="#">Fruit Burst</a></h2>
+                    </div>
+                </div>
+                <div class="navbar-end hidden lg:flex">
+                    <div class="relative text-black">
+                        <input type="text" placeholder="Search here"
+                            class="input rounded-full input-bordered w-24 md:w-auto pr-10" />
+                        <div class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
+                            <i class="fa fa-search text-lg text-gray-400" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </header>
 </body>
 </html>
